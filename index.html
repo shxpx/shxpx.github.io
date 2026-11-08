@@ -2,47 +2,56 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>shxpx 的开发笔记</title>
-  <style>
-    body {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 24px;
-      font-family: system-ui, sans-serif;
-      line-height: 1.8;
-      color: #243047;
-      background: #f5f7fb;
-    }
-    section {
-      background: white;
-      padding: 24px;
-      margin: 20px 0;
-      border-radius: 12px;
-    }
-    a { color: #2563eb; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人主页 | 欢迎访问</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>shxpx 的开发笔记</h1>
-    <p>个人项目与学习记录</p>
-  </header>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="brand">MyWebsite</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">首页</a>
+        <a href="about.html">关于</a>
+        <a href="projects.html">项目</a>
+        <a href="contact.html">联系</a>
+      </div>
+    </div>
+  </nav>
 
-  <section>
-    <h2>关于本站</h2>
-    <p>在这里介绍你的开发兴趣、学习方向，以及建立这个网站的目的。</p>
-  </section>
+  <main class="container">
+    <div class="card" style="text-align: center; padding: 50px 20px;">
+      <h1 style="font-size: 2.2rem; margin-bottom: 12px;">你好，我是 <span style="color: var(--primary);">你的名字</span> 👋</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 24px auto;">
+        软件工程师 / 技术爱好者 / 开源贡献者。喜欢构建好用、有趣的数字产品与工具。
+      </p>
+      <div>
+        <a href="projects.html" class="btn">查看项目</a>
+        <a href="about.html" class="btn" style="background: transparent; color: var(--primary); border: 1px solid var(--primary); margin-left: 10px;">了解更多</a>
+      </div>
+    </div>
 
-  <section>
-    <h2>我的项目</h2>
-    <p>请替换为你的真实项目介绍，包括功能、使用的技术和项目链接。</p>
-    <a href="https://github.com/shxpx">查看我的 GitHub</a>
-  </section>
+    <h2 style="margin: 30px 0 15px;">精选项目</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>项目名称 A</h3>
+        <p style="color: var(--text-muted); margin: 8px 0 12px;">一个简洁高效的轻量级工具库，支持跨平台使用。</p>
+        <div><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span></div>
+        <a href="projects.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">查看详情 &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>项目名称 B</h3>
+        <p style="color: var(--text-muted); margin: 8px 0 12px;">基于开源 API 打造的数据可视化与监控看板。</p>
+        <div><span class="tag">Python</span><span class="tag">Vue</span></div>
+        <a href="projects.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">查看详情 &rarr;</a>
+      </div>
+    </div>
+  </main>
 
-  <section>
-    <h2>学习记录</h2>
-    <p>请替换为一篇真实的开发笔记，例如项目实现过程或问题解决记录。</p>
-  </section>
+  <footer>
+    <div class="container">
+      <p>© 2026 你的名字. Powered by GitHub Pages.</p>
+    </div>
+  </footer>
 </body>
 </html>
