@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的项目 | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="brand">MyWebsite</a>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="projects.html" class="active">项目</a>
+        <a href="contact.html">联系</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2 style="margin-bottom: 20px;">全部项目</h2>
+    <div class="grid">
+      <!-- 项目卡片 1 -->
+      <div class="card">
+        <h3>项目 Alpha</h3>
+        <p style="color: var(--text-muted); margin: 10px 0;">该项目的简要介绍，解决的具体痛点或实现的主要特性。</p>
+        <div>
+          <span class="tag">Vue 3</span>
+          <span class="tag">TypeScript</span>
+        </div>
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/your-username/project-alpha" target="_blank" class="btn" style="padding: 4px 10px; font-size: 0.85rem;">源码</a>
+          <a href="#" target="_blank" class="btn" style="padding: 4px 10px; font-size: 0.85rem; background: #64748b;">预览</a>
+        </div>
+      </div>
+
+      <!-- 项目卡片 2 -->
+      <div class="card">
+        <h3>项目 Beta</h3>
+        <p style="color: var(--text-muted); margin: 10px 0;">自动化爬虫与数据汇总程序，支持定时告警推送。</p>
+        <div>
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+        </div>
+        <div style="margin-top: 15px;">
+          <a href="https://github.com/your-username/project-beta" target="_blank" class="btn" style="padding: 4px 10px; font-size: 0.85rem;">源码</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 你的名字. Powered by GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
